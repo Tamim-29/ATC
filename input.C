@@ -1,0 +1,7 @@
+int main() {
+    int number = 10, number2;
+    float average;
+    if (number > 5) {
+        return number;
+    }
+}
