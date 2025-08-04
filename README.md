@@ -1,1 +1,1 @@
-# Automata-Theory-Compiler
+# ATC
