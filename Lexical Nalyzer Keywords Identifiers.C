@@ -2,7 +2,7 @@
 #include <string.h>
 #include <ctype.h>
 
-// means 7 strings, each up to 9 characters + '\0'
+
 char keywords[7][10] = {
     "int",
     "float",
@@ -21,16 +21,15 @@ int is_keyword(char *word){
             return 1; // Found a keyword
         }
     }
-    return 0; // Not a keyword
+    return 0;
 }
 
 int main() {
     char ch, word[50];
     int total_keywords = 0, total_identifiers = 0, i = 0;
 
-    // To Read file create a file pointer
+
     FILE *fptr;
-    // Open the file in read mode
     fptr = fopen("input.txt", "r");
 
     if(fptr == NULL) {
@@ -59,7 +58,6 @@ int main() {
 
     fclose(fptr); // Close the file
 
-    // Show count summary
     printf("\n--- Summary ---\n");
     printf("Total Keywords   : %d\n", total_keywords);
     printf("Total Identifiers: %d\n", total_identifiers);
