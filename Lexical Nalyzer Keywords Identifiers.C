@@ -2,7 +2,6 @@
 #include <string.h>
 #include <ctype.h>
 
-
 char keywords[7][10] = {
     "int",
     "float",
